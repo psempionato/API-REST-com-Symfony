@@ -70,8 +70,6 @@ class AuthController extends AbstractController
 
         $user = $this->userRepository->findByEmail($email);
 
-        $pass = $this->passwordHasher->isPasswordValid($user, $password);
-
         if (!$user || !$this->passwordHasher->isPasswordValid($user, $password)) {
             return new JsonResponse(['message' => 'Invalid Credentials'], Response::HTTP_UNAUTHORIZED);
         }
