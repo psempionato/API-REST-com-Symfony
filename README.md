@@ -15,7 +15,7 @@ frontend/ - Contém a aplicação Vue.js com Tailwind CSS.
 # Passos
 
 - Clone o repositório
-- git clone https://gitlab.com/psempionato/vox-test.git
+- git clone github.com/psempionato/API-REST-com-Symfony.git
 - cd <Repositorio>
 - Na raiz do projeto, execute o seguinte comando para construir e iniciar os containers: docker-compose up -d --build
 
